@@ -1,0 +1,124 @@
+{
+  "globalQuery": "filter by function task.description.length > 0",
+  "globalFilter": "",
+  "removeGlobalFilter": false,
+  "taskFormat": "tasksPluginEmoji",
+  "setCreatedDate": false,
+  "setDoneDate": true,
+  "setCancelledDate": true,
+  "autoSuggestInEditor": true,
+  "autoSuggestMinMatch": 0,
+  "autoSuggestMaxItems": 10,
+  "provideAccessKeys": true,
+  "useFilenameAsScheduledDate": false,
+  "filenameAsScheduledDateFormat": "",
+  "filenameAsDateFolders": [],
+  "recurrenceOnNextLine": true,
+  "statusSettings": {
+    "coreStatuses": [
+      {
+        "symbol": " ",
+        "name": "Todo",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": true,
+        "type": "TODO"
+      },
+      {
+        "symbol": "x",
+        "name": "Done",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": true,
+        "type": "DONE"
+      }
+    ],
+    "customStatuses": [
+      {
+        "symbol": "/",
+        "name": "In Progress",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": true,
+        "type": "IN_PROGRESS"
+      },
+      {
+        "symbol": "-",
+        "name": "Cancelled",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": true,
+        "type": "CANCELLED"
+      },
+      {
+        "symbol": " ",
+        "name": "Unchecked",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": false,
+        "type": "TODO"
+      },
+      {
+        "symbol": "x",
+        "name": "Regular",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": false,
+        "type": "DONE"
+      },
+      {
+        "symbol": "X",
+        "name": "Checked",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": false,
+        "type": "DONE"
+      },
+      {
+        "symbol": "-",
+        "name": "Dropped",
+        "nextStatusSymbol": " ",
+        "availableAsCommand": false,
+        "type": "CANCELLED"
+      },
+      {
+        "symbol": "D",
+        "name": "Date",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": false,
+        "type": "TODO"
+      },
+      {
+        "symbol": "+",
+        "name": "Add",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": false,
+        "type": "TODO"
+      },
+      {
+        "symbol": "d",
+        "name": "Doing",
+        "nextStatusSymbol": "x",
+        "availableAsCommand": false,
+        "type": "IN_PROGRESS"
+      }
+    ]
+  },
+  "features": {
+    "INTERNAL_TESTING_ENABLED_BY_DEFAULT": true
+  },
+  "generalSettings": {},
+  "headingOpened": {
+    "Core Statuses": true,
+    "Custom Statuses": true
+  },
+  "debugSettings": {
+    "ignoreSortInstructions": false,
+    "showTaskHiddenData": false,
+    "recordTimings": false
+  },
+  "loggingOptions": {
+    "minLevels": {
+      "": "info",
+      "tasks": "info",
+      "tasks.Cache": "info",
+      "tasks.Events": "info",
+      "tasks.File": "info",
+      "tasks.Query": "info",
+      "tasks.Task": "info"
+    }
+  }
+}

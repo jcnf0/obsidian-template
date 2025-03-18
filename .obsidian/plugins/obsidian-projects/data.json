@@ -1,0 +1,85 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "tag",
+        "config": {
+          "tag": "#soss",
+          "hierarchy": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "year": {
+                "hide": true
+              },
+              "venue": {
+                "hide": true
+              },
+              "type": {
+                "hide": true
+              },
+              "paper_title": {
+                "hide": false
+              },
+              "date": {
+                "hide": true
+              },
+              "summary": {
+                "hide": true
+              },
+              "company": {
+                "hide": true
+              },
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 279
+              },
+              "banner": {
+                "hide": true
+              }
+            }
+          },
+          "filter": {
+            "conjunction": "and",
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "60562eb4-52e2-4f9b-b599-a5e937380956",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "58b3b8df-b966-4b77-b7a7-26824010a27e",
+      "name": "Security of OS Supply Chain"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 100,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "locale": {
+      "firstDayOfWeek": "monday"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

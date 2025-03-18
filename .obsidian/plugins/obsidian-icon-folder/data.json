@@ -1,0 +1,70 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiHome",
+      "LiCalendarCog",
+      "LiCalendarSearch",
+      "LiPaperclip",
+      "LiUngroup"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "RESEARCH": {
+    "iconName": "LiBook",
+    "iconColor": "#a21010"
+  },
+  "CLASSES": {
+    "iconName": "LiBookCopy",
+    "iconColor": "#026412"
+  },
+  "PERSONAL": {
+    "iconName": "LiShield",
+    "iconColor": "#0f6fb8"
+  },
+  "MISC": {
+    "iconName": "LiAtom",
+    "iconColor": "#474343"
+  },
+  "PERSONAL/DIARY": "LiCloud",
+  "PERSONAL/CHORES": "LiListTodo",
+  "RESEARCH/CODE": "LiCode",
+  "RESEARCH/LOGISTICS": "LiMail",
+  "RESEARCH/READING": "LiBookOpenText",
+  "RESEARCH/MEETINGS": "LiPersonStanding",
+  "RESEARCH/WRITING": "LiPenBox",
+  "MISC/DAILY NOTES": "LiCalendarDays",
+  "MISC/WEEKLY NOTES": "LiCalendarPlus",
+  "MISC/EXCALIDRAW": "LiPenTool",
+  "MISC/ATTACHMENTS": "LiPaperclip",
+  "MISC/PEOPLE": "LiPersonStanding",
+  "MISC/TEMPLATES": "LiFolderCode",
+  "MISC/MOC": "LiUngroup",
+  "MISC/TASK CALENDAR": "LiCalendarCog",
+  "Homepage.md": "LiHome",
+  "MISC/TASK TIMELINE": "LiCalendarCog"
+}
