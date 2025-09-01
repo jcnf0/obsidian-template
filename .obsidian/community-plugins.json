@@ -1,4 +1,5 @@
 [
+  "templater-obsidian",
   "calendar",
   "obsidian-meta-bind-plugin",
   "cm-editor-syntax-highlight-obsidian",
@@ -9,12 +10,10 @@
   "obsidian-projects",
   "obsidian-linter",
   "obsidian-style-settings",
+  "table-editor-obsidian",
   "pexels-banner",
   "homepage",
   "contribution-graph",
   "dataview",
-  "smart-connections",
-  "table-editor-obsidian",
-  "obsidian-tasks-plugin",
-  "templater-obsidian"
+  "obsidian-tasks-plugin"
 ]

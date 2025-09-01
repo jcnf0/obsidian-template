@@ -1,4 +1,8 @@
 {
   "showInlineTitle": false,
-  "readableLineLength": false
+  "readableLineLength": false,
+  "attachmentFolderPath": "MISC/ATTACHMENTS",
+  "propertiesInDocument": "visible",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }

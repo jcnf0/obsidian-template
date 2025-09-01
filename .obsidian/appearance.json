@@ -1,12 +1,14 @@
 {
-  "accentColor": "#b51a00",
+  "accentColor": "#be0909",
   "cssTheme": "Blue Topaz",
   "baseFontSize": 18,
   "enabledCssSnippets": [
     "S - Checkboxes",
     "Mathematics Callouts",
     "Hoverable Dropdown",
+    "minimal-tasks",
     "Colored Sidebar Items",
-    "minimal-tasks"
-  ]
+    "test"
+  ],
+  "showRibbon": true
 }

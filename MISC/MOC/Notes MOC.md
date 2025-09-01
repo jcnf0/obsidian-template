@@ -16,8 +16,6 @@ actions:
     openNote: true
 
 ```
-# Reviews
-
 ```dataview
 TABLE file.cday as Created, summary
 FROM "RESEARCH/READING/NOTES" and -#MOC

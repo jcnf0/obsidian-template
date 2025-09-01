@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Main
+    filters:
+      and:
+        - file.folder == "RESEARCH/MEETINGS"
+    order:
+      - file.name
+      - summary
+  - type: table
+    name: PRISM
+    filters:
+      and:
+        - file.folder == "RESEARCH/MEETINGS"
+        - file.name.contains("PRISM")
+    order:
+      - file.name
+      - summary
+    columnSize:
+      file.name: 299

@@ -1,5 +1,6 @@
 {
-  "globalQuery": "filter by function task.description.length > 0",
+  "presets": {},
+  "globalQuery": "filter by function task.description.length > 0\nfilter by function task.file.path.includes(\"MISC/\")\nshow tree",
   "globalFilter": "",
   "removeGlobalFilter": false,
   "taskFormat": "tasksPluginEmoji",
@@ -11,9 +12,12 @@
   "autoSuggestMaxItems": 10,
   "provideAccessKeys": true,
   "useFilenameAsScheduledDate": false,
-  "filenameAsScheduledDateFormat": "",
-  "filenameAsDateFolders": [],
+  "filenameAsScheduledDateFormat": "YYYY-MM-DD",
+  "filenameAsDateFolders": [
+    "MISC/DAILY NOTES"
+  ],
   "recurrenceOnNextLine": true,
+  "removeScheduledDateOnRecurrence": false,
   "statusSettings": {
     "coreStatuses": [
       {

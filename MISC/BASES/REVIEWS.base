@@ -1,0 +1,32 @@
+views:
+  - type: table
+    name: Main
+    filters:
+      and:
+        - or:
+            - file.folder == "RESEARCH/READING/REVIEWS"
+            - file.folder == "RESEARCH/CODE/ARTIFACT REVIEWS"
+    order:
+      - file.name
+      - paper_title
+      - venue
+      - year
+    columnSize:
+      note.paper_title: 428
+      note.venue: 115
+  - type: table
+    name: TODO
+    filters:
+      and:
+        - or:
+            - file.folder == "RESEARCH/READING/REVIEWS"
+            - file.folder == "RESEARCH/CODE/ARTIFACT REVIEWS"
+        - file.tags.contains("TODO/WRITE")
+    order:
+      - file.name
+      - paper_title
+      - venue
+      - year
+    columnSize:
+      note.paper_title: 428
+      note.venue: 115

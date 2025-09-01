@@ -15,7 +15,92 @@
   "enableSyntaxHighlighting": true,
   "enableEditorRightClickMenu": true,
   "inputFieldTemplates": [],
-  "buttonTemplates": [],
+  "buttonTemplates": [
+    {
+      "label": "New Note",
+      "icon": "",
+      "style": "primary",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "note",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "MISC/TEMPLATES/Note Template.md",
+          "folderPath": "RESEARCH/READING/NOTES",
+          "fileName": "Note",
+          "openNote": true,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "New Meeting",
+      "icon": "",
+      "style": "primary",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "meeting",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "MISC/TEMPLATES/Meeting Template.md",
+          "folderPath": "RESEARCH/MEETINGS",
+          "fileName": "Meeting",
+          "openNote": true,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "New Review",
+      "icon": "",
+      "style": "primary",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "review",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "MISC/TEMPLATES/Review Template.md",
+          "folderPath": "RESEARCH/READING/REVIEWS",
+          "fileName": "Review",
+          "openNote": true,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "New Thought",
+      "icon": "",
+      "style": "primary",
+      "class": "",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "thought",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "MISC/TEMPLATES/Thought Template.md",
+          "folderPath": "PERSONAL/DIARY/THOUGHTS",
+          "fileName": "Thought",
+          "openNote": true,
+          "openIfAlreadyExists": false
+        }
+      ]
+    }
+  ],
   "excludedFolders": [
     "templates"
   ]

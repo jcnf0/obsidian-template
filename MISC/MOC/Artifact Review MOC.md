@@ -16,8 +16,6 @@ actions:
     openNote: true
 
 ```
-# Artifact Reviews
-
 ```dataview
 TABLE file.cday as Created, summary
 FROM "RESEARCH/CODE/ARTIFACT REVIEWS" and -#MOC

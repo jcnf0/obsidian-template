@@ -16,8 +16,6 @@ actions:
     openNote: true
 
 ```
-# Meeting Notes
-
 ```dataview
 TABLE file.cday as Created, summary
 FROM "RESEARCH/MEETINGS" and -#MOC

@@ -1,31 +1,72 @@
----
-created: <% tp.file.creation_date() %>
----
 # <% tp.file.title %>
-[[<%tp.date.now("YYYY-[W]ww", -9)%>]] <== This Week ==> [[<%tp.date.now("YYYY-[W]ww", 2)%>]]
+[[<%tp.date.now("YYYY-[W]ww", -7)%>]] <== This Week ==> [[<%tp.date.now("YYYY-[W]ww", 7)%>]]
 
-# Main Objectives
+# Week Tasks
+
 
 
 ---
-# Week Tasks
 ```tasks
-not done
-due after {{date:YYYY-MM-DD}}
-due before {{date+6d:YYYY-MM-DD}}
+(not done) OR ((done before {{date+6d:YYYY-MM-DD}}) AND (done after {{date-1d:YYYY-MM-DD}}))
+(due after {{date-1d:YYYY-MM-DD}}) AND (due before {{date+6d:YYYY-MM-DD}}) OR (no due date)
+(no scheduled date) OR (scheduled before {{date-1d:YYYY-MM-DD}}) OR (scheduled after {{date+6d:YYYY-MM-DD}})
+group by function task.due.category.groupText
 limit 20
 sort by priority
 sort by due date
-group by function task.tags.join(", ").replace("#","").toUpperCase()
+hide tags
 hide backlink
 hide due date
 ```
 
----
-# Days
-
-## MONDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 0, tp.file.title, "YYYY-[W]ww") %>]]
-## TUESDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 1, tp.file.title, "YYYY-[W]ww") %>]]
-## WEDNESDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 2, tp.file.title, "YYYY-[W]ww") %>]]
-## THURSDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 3, tp.file.title, "YYYY-[W]ww") %>]]
-## FRIDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 4, tp.file.title, "YYYY-[W]ww") %>]]
+## Days
+### MONDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 0, tp.file.title, "YYYY-[W]ww") %>]]
+```tasks
+(not done) OR (status.type is CANCELLED) OR ((done before {{date+6d:YYYY-MM-DD}}) AND (done after {{date-1d:YYYY-MM-DD}}))
+scheduled on {{date:YYYY-MM-DD}}
+sort by priority
+sort by due date
+hide tags
+hide backlink
+hide due date
+```
+### TUESDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 1, tp.file.title, "YYYY-[W]ww") %>]]
+```tasks
+(not done) OR (status.type is CANCELLED) OR ((done before {{date+6d:YYYY-MM-DD}}) AND (done after {{date-1d:YYYY-MM-DD}}))
+scheduled on {{date+1d:YYYY-MM-DD}}
+sort by priority
+sort by due date
+hide tags
+hide backlink
+hide due date
+```
+### WEDNESDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 2, tp.file.title, "YYYY-[W]ww") %>]]
+```tasks
+(not done) OR (status.type is CANCELLED) OR ((done before {{date+6d:YYYY-MM-DD}}) AND (done after {{date-1d:YYYY-MM-DD}}))
+scheduled on {{date+2d:YYYY-MM-DD}}
+sort by priority
+sort by due date
+hide tags
+hide backlink
+hide due date
+```
+### THURSDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 3, tp.file.title, "YYYY-[W]ww") %>]]
+```tasks
+(not done) OR (status.type is CANCELLED) OR ((done before {{date+6d:YYYY-MM-DD}}) AND (done after {{date-1d:YYYY-MM-DD}}))
+scheduled on {{date+3d:YYYY-MM-DD}}
+sort by priority
+sort by due date
+hide tags
+hide backlink
+hide due date
+```
+### FRIDAY [[<% tp.date.now("YYYY-MM-DD_ddd", 4, tp.file.title, "YYYY-[W]ww") %>]]
+```tasks
+(not done) OR (status.type is CANCELLED) OR ((done before {{date+6d:YYYY-MM-DD}}) AND (done after {{date-1d:YYYY-MM-DD}}))
+scheduled on {{date+4d:YYYY-MM-DD}}
+sort by priority
+sort by due date
+hide tags
+hide backlink
+hide due date
+```

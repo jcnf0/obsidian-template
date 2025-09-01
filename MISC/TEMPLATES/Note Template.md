@@ -1,24 +1,23 @@
 ---
-banner: "[[open-book-banner.png]]"
-paper_title: 
-venue: 
-year: 
+banner: "[[reading.png]]"
+paper_title:
+venue:
+year:
 summary:
 ---
-
-
-
-
-
-
-[[Notes MOC]] | [[READING]]
-<% await tp.file.rename(tp.date.now("YYYY-MM-DD_ddd") + " " + tp.file.title) %>
+[[Notes MOC]]
 # Daily Note : [[<%tp.date.now("YYYY-MM-DD_ddd")%>]]
 
 ---
-## Subject Tags::
+## Tags:
 ## Paper Link:
 
 ---
 # Notes
+## Abstract / Introduction
 
+## Background
+
+## Methodology
+
+## Evaluation

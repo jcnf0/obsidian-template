@@ -1,6 +1,6 @@
 ---
-banner: "[[purple-sky-banner.gif]]"
-icon: 
+banner: "[[homepage.gif]]"
+icon:
 banner-x: 50
 banner-y: 50
 banner-display: cover
@@ -45,12 +45,29 @@ cellStyleRules:
     max: 999
 
 ```
-```dataviewjs
-await dv.view("MISC/TASK CALENDAR", {pages: "", view: "week", firstDayOfWeek: "1", options: "style11 filter", dailyNotes: "MISC/DAILY NOTES", dailyNoteFormat:"YYYY-MM-DD_ddd", "section": "# Tasks/Notes"})
+# Backlog
+```tasks
+not done
+((due before yesterday) OR ((no due date))) AND (scheduled before today)
+limit 20
+sort by priority
+sort by due date
+hide tags
+hide backlink
 ```
 
-```dataviewjs
-dv.view("MISC/TASK TIMELINE", {pages: "", dailyNoteFolder: "MISC/DAILY NOTES", options: "noCounters noQuickEntry noDone", dailyNoteFormat:"YYYY-MM-DD_ddd", section:"# Tasks/Notes"})
+# TODOs
+## Reading
+```dataview
+TABLE file.folder AS "Folder"
+WHERE contains(file.tags, "TODO/READ") AND file.name!="TAGSONOMY"
+LIMIT 10
+```
+## Writing
+```dataview
+TABLE file.folder AS "Folder"
+WHERE contains(file.tags, "TODO/WRITE") AND file.name!="TAGSONOMY"
+LIMIT 10
 ```
 
-*Possible improvements:* Dropdown for each big section to leave space + daily/weekly note
+![[Obsidian Maintenance Tasks]]

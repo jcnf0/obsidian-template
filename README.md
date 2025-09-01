@@ -1,39 +1,51 @@
-# Plugins Requirements + Settings
-You'll first need the following plugins :
-- **Calendar** : Very useful for Daily and Weekly Notes (clicking on the day or week number shows the associated note)
-	- Check "Show Week Number'
-- **Dataview** : Allows SQL requests to your notes, used in People template and MOC
-- **Excalidraw** (Optional) : Allows to make drawings and annotations
-- **Meta Bind** : For the buttons in the MOC
-- **Periodic Notes** : For Weekly and Daily notes
-	- If you don't want to modify all the templates, change the format settings for Daily and Weekly Notes as follows
-	- `YYYY-MM-DD_ddd` for Daily Notes
-	- `gggg-[W]WW` for Weekly Notes (Base one)
-	- Daily Template : `MISC/TEMPLATES/Daily Note Template.md`
-	- Daily Folder : `MISC/DAILY NOTES`
-	- Weekly Template : `MISC/TEMPLATES/Weekly Note Template.md`
-	- Weekly Folder : `MISC/WEEKLY NOTES`
-- **Templater** : For using the templates given
-	- Template Folder : `MISC/TEMPLATES`
-	- Check `Trigger Templater on File Creation`
+# My Obsidian Template
+This repository contains the current structure, plugins, and settings of my Obsidian vault. It is meant to be a starting place to recreate a vault and a way for me to organize my own vault. For more details about the vault and how I use it, I encourage you to read my [blog post](https://jcnf.me/posts/my_obsidian_setup.html).
 
-# Templates
-- [[Review Template]] Linked with [[Reviews MOC]]
-- [[Meeting Template]] Linked with [[Meetings MOC]] I usually link People notes in the "Attendees" bullet points before taking notes of the meeting.
-- [[Artifact Review Template]] Linked with [[Artifact Review MOC]]
-- [[People Template]] Linked with [[People MOC]]
-- [[Daily Note Template]]
-- [[Weekly Note Template]]
-Feel free to edit those templates following what you need/want.
+> **Note:** The structure of my vault is constantly refined as I see fit. I took inspiration from files and configurations that I've seen and assembled them in a way that makes sense for me, but there might be better ways to organize your own vault depending on profile.
 
-The "MOC" notes groups all similar notes and serve as a hub for them. You can use the associated button to create a new note with the corresponding template.
+## Installation
+You can clone and remove the `git` files with:
 
-**IMPORTANT NOTES :** You'll need to update the MOC to change where you want the corresponding note to be if you change the directories. You can do that by clicking on the `</>` symbol at the right of the button and edit the `folderPath`.
+```
+git clone https://github.com/jcnf0/obsidian-template.git
+rm -rf .git
+find . -name ".gitkeep" -delete
+```
 
-# Theme
-I personally use the **Cybertron** theme since it has good color separation.
+## The Vault
+### Structure
+This subset of my vault contains the structure for my research (which I split into *coding*, *reading*, and *writing*) and miscellaneous utilities as follows:
 
-# Notes
-I also added some notes on how to read [[READING]] and how to write [[WRITING]] from Patrick's presentation and kept my directories if you need inspiration! This also makes the MOC usable without any changes normally. Feel free to modify that, you'll just need to update the MOC notes. I hope that it'll be helpful!
+```
+Vault
+├── MISC
+│   ├── ATTACHMENTS
+│   ├── BASES
+│   ├── DAILY NOTES
+│   ├── EXCALIDRAW
+│   ├── MOC
+│   ├── PEOPLE
+│   ├── TASK CALENDAR
+│   ├── TASK TIMELINE
+│   ├── TEMPLATES
+│   └── WEEKLY NOTES
+├── PERSONAL
+│   ├── DIARY
+│   │   └── THOUGHTS
+│   ├── HOBBIES
+│   └── LOGISTICS
+├── RESEARCH
+│   ├── CODE
+│   │   └── ARTIFACT REVIEWS
+│   ├── LOGISTICS
+│   ├── MEETINGS
+│   ├── READING
+│   │   ├── NOTES
+│   │   └── REVIEWS
+│   └── WRITING
+├── Homepage.md
+└── README.md
+```
 
-Let me know if you need any clarification on how all of that works (I just started but it's actually easier than it looks)
+## Credits
+The CSS and JS from `MISC/TASK CALENDAR` and `MISC/TASK TIMELINE` are slightly modified from https://github.com/702573N/Obsidian-Tasks-Calendar and https://github.com/702573N/Obsidian-Tasks-Timeline, respectively.

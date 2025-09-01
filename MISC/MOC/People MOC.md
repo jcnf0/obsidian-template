@@ -1,5 +1,5 @@
  #MOC
-
+ 
 ```meta-bind-button
 label: New People Note
 icon: ""
@@ -16,7 +16,6 @@ actions:
     openNote: true
 
 ```
-# People
 ```dataview
 table title
 from "MISC/PEOPLE"

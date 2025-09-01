@@ -1,0 +1,31 @@
+formulas:
+  Untitled: ""
+views:
+  - type: table
+    name: Main
+    filters:
+      and:
+        - file.folder == "RESEARCH/READING/NOTES"
+    order:
+      - file.name
+      - paper_title
+      - venue
+      - year
+      - summary
+      - file.ctime
+      - file.tags
+    sort:
+      - property: file.ctime
+        direction: ASC
+    columnSize:
+      file.name: 186
+      note.paper_title: 596
+      note.summary: 530
+  - type: table
+    name: TODO
+    filters:
+      and:
+        - file.tags.contains("TODO/READ")
+        - file.folder == "RESEARCH/READING/NOTES"
+    imageAspectRatio: 1
+    cardSize: 260
