@@ -2,7 +2,7 @@
   "collapse-filter": false,
   "search": "-path:MISC/MOC  -path:MISC/TEMPLATES  ",
   "showTags": false,
-  "showAttachments": true,
+  "showAttachments": false,
   "hideUnresolved": true,
   "showOrphans": false,
   "collapse-color-groups": false,
@@ -46,7 +46,7 @@
       "query": " path:\"MISC/WEEKLY NOTES\"  ",
       "color": {
         "a": 1,
-        "rgb": 14722386
+        "rgb": 16749824
       }
     }
   ],
@@ -58,8 +58,8 @@
   "collapse-forces": false,
   "centerStrength": 0,
   "repelStrength": 20,
-  "linkStrength": 0.445876288659794,
-  "linkDistance": 172,
-  "scale": 0.0078125,
+  "linkStrength": 1,
+  "linkDistance": 500,
+  "scale": 0.018112700782254097,
   "close": false
 }

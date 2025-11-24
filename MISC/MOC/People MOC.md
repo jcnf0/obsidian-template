@@ -1,5 +1,5 @@
  #MOC
- 
+
 ```meta-bind-button
 label: New People Note
 icon: ""

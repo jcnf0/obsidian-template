@@ -2,18 +2,22 @@
 company: 
 location: 
 title: 
-email: 
-website: 
+email: <% await tp.system.prompt("Email", null, true) %>
+website: <% await tp.system.prompt("Website", null, false) %>
 aliases: 
 ---
 [[People MOC]]
-# [[<% tp.file.title %>]]
-<% await tp.file.move("/📖 RESEARCH/👥 MEETINGS/People/" + tp.file.title) %>
-
+<%*
+let name = await tp.system.prompt("Name", null, false);
+await tp.file.rename(name)
+%>
+# <% name %>
 ---
-## Meetings
+# Meetings
 ```dataview
 TABLE file.cday as Created, summary AS "Summary"
 FROM "RESEARCH/MEETINGS" where contains(file.outlinks, [[]])
 SORT file.cday DESC
 ```
+
+# Notes

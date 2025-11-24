@@ -12,14 +12,12 @@
 ---
 # Tasks
 ```tasks
-(path includes MISC/DAILY NOTES) OR (path includes MISC/WEEKLY NOTES)
 scheduled {{date:YYYY-MM-DD}}
 limit 20
 sort by priority
 sort by due date
 group by function task.tags.map( (tag) => tag.split('/')[1] ? tag.split('/').slice(1, 2) : '').filter( (tag) => tag.includes("SHALLOW") | tag.includes("DEEP") )
 hide tags
-hide backlink
 hide due date
 ```
 ---

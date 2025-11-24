@@ -7,13 +7,15 @@
   "obsidian-pandoc",
   "periodic-notes",
   "obsidian-zotero-desktop-connector",
-  "obsidian-projects",
   "obsidian-linter",
   "obsidian-style-settings",
-  "table-editor-obsidian",
   "pexels-banner",
   "homepage",
   "contribution-graph",
   "dataview",
-  "obsidian-tasks-plugin"
+  "obsidian-tasks-plugin",
+  "omnisearch",
+  "obsidian42-brat",
+  "obsidian-snippet-downloader",
+  "smart-connections"
 ]

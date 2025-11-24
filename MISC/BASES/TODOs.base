@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.tags.contains("TODO")
+views:
+  - type: table
+    name: All
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - file.folder
+      - file.tags
+      - file.ctime
+    sort: []
+  - type: table
+    name: Reading
+    filters:
+      and:
+        - file.hasTag("TODO/READ")
+  - type: table
+    name: Writing
+    filters:
+      and:
+        - file.hasTag("TODO/WRITE")

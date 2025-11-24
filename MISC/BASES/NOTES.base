@@ -5,22 +5,28 @@ views:
     name: Main
     filters:
       and:
-        - file.folder == "RESEARCH/READING/NOTES"
+        - file.folder == "RESEARCH/READING/PAPERS"
     order:
       - file.name
       - paper_title
       - venue
       - year
       - summary
-      - file.ctime
       - file.tags
+      - file.ctime
     sort:
+      - property: year
+        direction: ASC
       - property: file.ctime
+        direction: DESC
+      - property: paper_title
+        direction: DESC
+      - property: venue
         direction: ASC
     columnSize:
-      file.name: 186
-      note.paper_title: 596
-      note.summary: 530
+      file.name: 152
+      note.paper_title: 345
+      note.summary: 362
   - type: table
     name: TODO
     filters:

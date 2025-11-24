@@ -3,12 +3,10 @@
   "cssTheme": "Blue Topaz",
   "baseFontSize": 18,
   "enabledCssSnippets": [
-    "S - Checkboxes",
     "Mathematics Callouts",
-    "Hoverable Dropdown",
-    "minimal-tasks",
     "Colored Sidebar Items",
-    "test"
+    "test",
+    "minimal-tasks"
   ],
   "showRibbon": true
 }

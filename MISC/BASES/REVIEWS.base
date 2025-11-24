@@ -6,11 +6,17 @@ views:
         - or:
             - file.folder == "RESEARCH/READING/REVIEWS"
             - file.folder == "RESEARCH/CODE/ARTIFACT REVIEWS"
+    groupBy:
+      property: year
+      direction: ASC
     order:
       - file.name
       - paper_title
       - venue
       - year
+    sort:
+      - property: venue
+        direction: DESC
     columnSize:
       note.paper_title: 428
       note.venue: 115
@@ -27,6 +33,42 @@ views:
       - paper_title
       - venue
       - year
+    columnSize:
+      note.paper_title: 428
+      note.venue: 115
+  - type: table
+    name: Paper
+    filters:
+      and:
+        - or:
+            - file.folder == "RESEARCH/READING/REVIEWS"
+    groupBy:
+      property: year
+      direction: ASC
+    order:
+      - file.name
+      - paper_title
+      - venue
+      - year
+    sort: []
+    columnSize:
+      note.paper_title: 428
+      note.venue: 115
+  - type: table
+    name: Artifact
+    filters:
+      and:
+        - or:
+            - file.folder == "RESEARCH/CODE/ARTIFACT REVIEWS"
+    groupBy:
+      property: year
+      direction: ASC
+    order:
+      - file.name
+      - paper_title
+      - venue
+      - year
+    sort: []
     columnSize:
       note.paper_title: 428
       note.venue: 115

@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiPenBox",
+      "LiBookOpenText",
+      "LiArchive",
       "LiTv",
-      "LiGamepad2",
-      "LiArmchair",
-      "LiServerCog",
-      "⚙"
+      "LiGamepad2"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -47,7 +47,6 @@
     "iconColor": "#0f6fb8"
   },
   "MISC": "LiWrench",
-  "PERSONAL/DIARY": "LiCloud",
   "RESEARCH/CODE": "LiCode",
   "RESEARCH/LOGISTICS": "LiMail",
   "RESEARCH/READING": "LiBookOpenText",
@@ -60,10 +59,7 @@
   "MISC/PEOPLE": "LiPersonStanding",
   "MISC/TEMPLATES": "LiFolderCode",
   "MISC/MOC": "LiUngroup",
-  "MISC/TASK CALENDAR": "LiCalendarCog",
   "Homepage.md": "LiHome",
-  "MISC/TASK TIMELINE": "LiCalendarCog",
-  "PERSONAL/BLOG POSTS": "LiSquarePen",
   "MISC/BASES": "LiDatabase",
   "PERSONAL/LOGISTICS": "LiMail",
   "PERSONAL/HOBBIES/HOMELAB": "LiServerCog",
@@ -73,5 +69,8 @@
   "PERSONAL/HOBBIES/GAME DEVELOPMENT": "LiGamepad2",
   "PERSONAL/HOBBIES/GAME DEVELOPMENT/MUSIC": "LiMusic",
   "PERSONAL/HOBBIES/GAME DEVELOPMENT/STORY": "LiBookOpen",
-  "PERSONAL/HOBBIES/GAME DEVELOPMENT/VISUALS": "LiEye"
+  "PERSONAL/HOBBIES/GAME DEVELOPMENT/VISUALS": "LiEye",
+  "ARCHIVE": "LiArchive",
+  "PERSONAL/READING": "LiBookOpenText",
+  "PERSONAL/WRITING": "LiPenBox"
 }

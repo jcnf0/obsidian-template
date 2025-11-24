@@ -2,16 +2,18 @@
 banner: "[[homepage.gif]]"
 icon:
 banner-x: 50
-banner-y: 50
+banner-y: 40
 banner-display: cover
-banner-height: 350
+banner-height: 460
+banner-fade: -65
+banner-radius: 33
 ---
 
 ```contributionGraph
-title: 
+title:
 graphType: default
-dateRangeValue: 360
-dateRangeType: LATEST_DAYS
+dateRangeValue: 6
+dateRangeType: LATEST_MONTH
 startOfWeek: "1"
 showCellRuleIndicators: true
 titleStyle:
@@ -21,8 +23,11 @@ titleStyle:
 dataSource:
   type: PAGE
   value: ""
-  dateField: {}
+  dateField:
+    type: FILE_CTIME
   filters: []
+  countField:
+    type: DEFAULT
 fillTheScreen: false
 enableMainContainerShadow: false
 cellStyle: {}
@@ -48,25 +53,25 @@ cellStyleRules:
 # Backlog
 ```tasks
 not done
-((due before yesterday) OR ((no due date))) AND (scheduled before today)
+(((due before yesterday) OR ((no due date))) AND (scheduled before today)) OR ((no due date) AND (no scheduled date))
 limit 20
+group by function task.due.category.groupText
 sort by priority
 sort by due date
 hide tags
 hide backlink
 ```
 
-# TODOs
-## Reading
+# 📚 The Stack
 ```dataview
 TABLE file.folder AS "Folder"
-WHERE contains(file.tags, "TODO/READ") AND file.name!="TAGSONOMY"
+WHERE contains(file.tags, "TODO/READ") AND !contains(file.path, "MISC")
 LIMIT 10
 ```
-## Writing
+# ✍️ The Heap
 ```dataview
 TABLE file.folder AS "Folder"
-WHERE contains(file.tags, "TODO/WRITE") AND file.name!="TAGSONOMY"
+WHERE contains(file.tags, "TODO/WRITE") AND file.name!="TAGSONOMY" AND !contains(file.path, "MISC/TEMPLATES")
 LIMIT 10
 ```
 

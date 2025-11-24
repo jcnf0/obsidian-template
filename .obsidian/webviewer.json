@@ -1,5 +1,5 @@
 {
-  "openExternalURLs": true,
+  "openExternalURLs": false,
   "enableAdblocking": true,
   "customSearchEngine": "https://duckduckgo.com/?q=%s",
   "searchEngine": "duckduckgo"

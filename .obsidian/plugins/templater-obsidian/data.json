@@ -15,8 +15,8 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "RESEARCH/READING/NOTES",
-      "template": "MISC/TEMPLATES/Daily Note Template.md"
+      "folder": "RESEARCH/READING/PAPERS",
+      "template": "MISC/TEMPLATES/Paper Reading Template.md"
     },
     {
       "folder": "PERSONAL/DIARY/THOUGHTS",
@@ -50,5 +50,6 @@
   "startup_templates": [
     ""
   ],
+  "intellisense_render": 1,
   "enable_ribbon_icon": true
 }

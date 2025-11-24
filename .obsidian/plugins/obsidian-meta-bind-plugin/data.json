@@ -8,8 +8,6 @@
     "shortName": "Mo"
   },
   "syncInterval": 200,
-  "minSyncInterval": 50,
-  "maxSyncInterval": 1000,
   "enableJs": false,
   "viewFieldDisplayNullAsEmpty": false,
   "enableSyntaxHighlighting": true,
@@ -17,7 +15,7 @@
   "inputFieldTemplates": [],
   "buttonTemplates": [
     {
-      "label": "New Note",
+      "label": "New Paper Note",
       "icon": "",
       "style": "primary",
       "class": "",
@@ -29,9 +27,9 @@
       "actions": [
         {
           "type": "templaterCreateNote",
-          "templateFile": "MISC/TEMPLATES/Note Template.md",
-          "folderPath": "RESEARCH/READING/NOTES",
-          "fileName": "Note",
+          "templateFile": "MISC/TEMPLATES/Paper Reading Template.md",
+          "folderPath": "RESEARCH/READING/PAPERS",
+          "fileName": "Paper Note",
           "openNote": true,
           "openIfAlreadyExists": false
         }
@@ -80,7 +78,7 @@
       ]
     },
     {
-      "label": "New Thought",
+      "label": "New Writing",
       "icon": "",
       "style": "primary",
       "class": "",
@@ -92,9 +90,9 @@
       "actions": [
         {
           "type": "templaterCreateNote",
-          "templateFile": "MISC/TEMPLATES/Thought Template.md",
-          "folderPath": "PERSONAL/DIARY/THOUGHTS",
-          "fileName": "Thought",
+          "templateFile": "MISC/TEMPLATES/Writing Template.md",
+          "folderPath": "PERSONAL/WRITING",
+          "fileName": "Writing",
           "openNote": true,
           "openIfAlreadyExists": false
         }
@@ -103,5 +101,7 @@
   ],
   "excludedFolders": [
     "templates"
-  ]
+  ],
+  "minSyncInterval": 50,
+  "maxSyncInterval": 1000
 }

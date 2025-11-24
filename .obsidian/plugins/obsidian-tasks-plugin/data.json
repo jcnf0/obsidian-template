@@ -1,6 +1,6 @@
 {
   "presets": {},
-  "globalQuery": "filter by function task.description.length > 0\nfilter by function task.file.path.includes(\"MISC/\")\nshow tree",
+  "globalQuery": "filter by function task.description.length > 0\n(path includes MISC/DAILY NOTES) OR (path includes MISC/WEEKLY NOTES) OR (path includes RESEARCH/MEETINGS)\nshow tree",
   "globalFilter": "",
   "removeGlobalFilter": false,
   "taskFormat": "tasksPluginEmoji",

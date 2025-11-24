@@ -25,14 +25,19 @@ Vault
 │   ├── EXCALIDRAW
 │   ├── MOC
 │   ├── PEOPLE
-│   ├── TASK CALENDAR
-│   ├── TASK TIMELINE
 │   ├── TEMPLATES
 │   └── WEEKLY NOTES
 ├── PERSONAL
-│   ├── DIARY
-│   │   └── THOUGHTS
 │   ├── HOBBIES
+│   ├── LOGISTICS
+│   ├── READING
+│   │   ├── BOOKS
+│   │   └── OTHER
+│   ├── WRITING
+│   │   ├── BLOG POSTS
+│   │   ├── FICTION
+│   │   ├── OTHER
+│   │   └── THOUGHTS
 │   └── LOGISTICS
 ├── RESEARCH
 │   ├── CODE
@@ -40,12 +45,9 @@ Vault
 │   ├── LOGISTICS
 │   ├── MEETINGS
 │   ├── READING
-│   │   ├── NOTES
+│   │   ├── PAPERS
 │   │   └── REVIEWS
 │   └── WRITING
 ├── Homepage.md
 └── README.md
 ```
-
-## Credits
-The CSS and JS from `MISC/TASK CALENDAR` and `MISC/TASK TIMELINE` are slightly modified from https://github.com/702573N/Obsidian-Tasks-Calendar and https://github.com/702573N/Obsidian-Tasks-Timeline, respectively.

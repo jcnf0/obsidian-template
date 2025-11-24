@@ -1,7 +1,7 @@
 {
   "pixelBannerPlusEmail": "",
   "pixelBannerPlusApiKey": "",
-  "pixelBannerPlusEnabled": true,
+  "pixelBannerPlusEnabled": false,
   "apiProvider": "all",
   "pexelsApiKey": "",
   "pixabayApiKey": "",
@@ -94,7 +94,7 @@
   "customBannerIconBorderRadiusField": [
     "icon-border-radius"
   ],
-  "customBannerIconVeritalOffsetField": [
+  "customBannerIconVerticalOffsetField": [
     "icon-y"
   ],
   "customBannerIconImageAlignmentField": [
@@ -117,7 +117,7 @@
   "pinnedImageFilename": "pixel-banner-image",
   "imagePropertyFormat": "![[image]]",
   "showReleaseNotes": true,
-  "lastVersion": "3.6.8",
+  "lastVersion": "3.6.15",
   "showRefreshIcon": true,
   "showViewImageIcon": false,
   "hidePixelBannerFields": true,
@@ -145,10 +145,14 @@
   "bannerIconPaddingX": "0",
   "bannerIconPaddingY": "0",
   "bannerIconBorderRadius": "17",
-  "bannerIconVeritalOffset": "0",
+  "bannerIconVerticalOffset": "0",
   "bannerIconImageAlignment": "left",
   "openTargetingModalAfterSelectingBannerOrIcon": true,
   "enableDailyGame": false,
+  "customBannerIconVeritalOffsetField": [
+    "icon-y"
+  ],
+  "bannerIconVeritalOffset": "0",
   "openBannerIconModalAfterSelectingBanner": true,
   "showSetTargetXYPosition": true
 }
