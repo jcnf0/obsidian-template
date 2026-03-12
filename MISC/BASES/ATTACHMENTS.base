@@ -1,0 +1,18 @@
+formulas:
+  file size mb: (file.size/1000000).round() + " MB"
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("MISC/ATTACHMENTS")
+    order:
+      - file.name
+      - file.folder
+      - file.ext
+      - formula.file size mb
+    sort:
+      - property: formula.file size mb
+        direction: DESC
+      - property: file.size
+        direction: DESC

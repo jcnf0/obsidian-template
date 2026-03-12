@@ -17,5 +17,7 @@
   "omnisearch",
   "obsidian42-brat",
   "obsidian-snippet-downloader",
-  "smart-connections"
+  "obsidian-livesync",
+  "obsidian-local-rest-api",
+  "obsidian-day-planner"
 ]

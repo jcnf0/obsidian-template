@@ -15,10 +15,10 @@
   "inputFieldTemplates": [],
   "buttonTemplates": [
     {
-      "label": "New Paper Note",
+      "label": "New Paper",
       "icon": "",
       "style": "primary",
-      "class": "",
+      "class": "main-button",
       "cssStyle": "",
       "backgroundImage": "",
       "tooltip": "",
@@ -39,7 +39,7 @@
       "label": "New Meeting",
       "icon": "",
       "style": "primary",
-      "class": "",
+      "class": "main-button",
       "cssStyle": "",
       "backgroundImage": "",
       "tooltip": "",
@@ -60,7 +60,7 @@
       "label": "New Review",
       "icon": "",
       "style": "primary",
-      "class": "",
+      "class": "main-button",
       "cssStyle": "",
       "backgroundImage": "",
       "tooltip": "",
@@ -81,7 +81,7 @@
       "label": "New Writing",
       "icon": "",
       "style": "primary",
-      "class": "",
+      "class": "main-button",
       "cssStyle": "",
       "backgroundImage": "",
       "tooltip": "",
@@ -93,6 +93,27 @@
           "templateFile": "MISC/TEMPLATES/Writing Template.md",
           "folderPath": "PERSONAL/WRITING",
           "fileName": "Writing",
+          "openNote": true,
+          "openIfAlreadyExists": false
+        }
+      ]
+    },
+    {
+      "label": "New Reading",
+      "icon": "",
+      "style": "primary",
+      "class": "main-button",
+      "cssStyle": "",
+      "backgroundImage": "",
+      "tooltip": "",
+      "id": "reading",
+      "hidden": false,
+      "actions": [
+        {
+          "type": "templaterCreateNote",
+          "templateFile": "MISC/TEMPLATES/Reading Template.md",
+          "folderPath": "PERSONAL/READING",
+          "fileName": "Reading",
           "openNote": true,
           "openIfAlreadyExists": false
         }

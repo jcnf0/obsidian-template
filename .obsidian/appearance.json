@@ -1,12 +1,11 @@
 {
-  "accentColor": "#be0909",
-  "cssTheme": "Blue Topaz",
-  "baseFontSize": 18,
   "enabledCssSnippets": [
-    "Mathematics Callouts",
-    "Colored Sidebar Items",
     "test",
-    "minimal-tasks"
+    "minimal-tasks",
+    "embed",
+    "Embedded Markdown",
+    "metabind"
   ],
-  "showRibbon": true
+  "cssTheme": "Blue Topaz",
+  "accentColor": "#d60000"
 }

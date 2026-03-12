@@ -1,0 +1,97 @@
+/* Meta Bind Uiverse-style button */
+
+.mb-button.main-button > button {
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 1.5rem;
+
+  background: #bc0505;
+  background-size: 400%;
+  color: #fff;
+
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover animation trigger */
+.mb-button.main-button > button:hover::before {
+  transform: scaleX(1);
+}
+
+/* Gradient overlay */
+.mb-button.main-button > button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+
+  transition: transform 0.475s ease;
+  z-index: 0;
+}
+
+/* Ensure button text stays above gradient */
+.mb-button.main-button > button {
+  z-index: 1;
+}
+
+.mb-button.main-button > button::before {
+  z-index: -1;
+}
+
+
+.mb-button.dash-button > button {
+  --button_radius: 0.75em;
+  --button_color: var(--background-primary);
+  --button_outline_color: var(--color-accent);
+  --press_depth: 0.2em;
+  --hover_lift: 0.15em;
+
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 370px;  
+  height: 120px; 
+  margin-right: 10px; 
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  border: 2px solid var(--button_outline_color); 
+  box-shadow: 0 var(--press_depth) 0 0 var(--button_outline_color);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.mb-button.knop-dash:last-child > button {
+    margin-right: 0;
+}
+
+.mb-button.knop-dash > button:hover {
+  transform: translateY(calc(-1 * var(--hover_lift)));
+  box-shadow: 0 calc(var(--press_depth) + var(--hover_lift)) 0 0 var(--button_outline_color);
+}
+
+.mb-button.knop-dash > button:active {
+  transform: translateY(var(--press_depth));
+  box-shadow: 0 0.05em 0 0 var(--button_outline_color); 
+  transition-duration: 0.001s;
+}

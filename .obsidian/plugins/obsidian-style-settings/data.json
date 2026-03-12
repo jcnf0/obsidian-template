@@ -24,5 +24,6 @@
   "blue-topaz-theme@@bt-background-split-container@@dark": "#00000000",
   "blue-topaz-theme@@blur-depth": 11,
   "blue-topaz-theme@@brightness-4-bg": 0.4,
-  "blue-topaz-theme@@saturate-4-bg": 0.7
+  "blue-topaz-theme@@saturate-4-bg": 0.7,
+  "blue-topaz-theme@@disable-auto-hide-header": false
 }

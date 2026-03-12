@@ -1,13 +1,15 @@
 <%*
-let type = await tp.system.suggester(["Blog Post", "Fiction", "Thought", "Other"], ["BLOG POSTS/", "FICTION/", "THOUGHTS/", "OTHER/"], true);
+let type = await tp.system.suggester(["Research Thought", "Personal Thought", "Blog Post", "Fiction", "Other"], ["RESEARCH/WRITING/THOUGHTS/", "PERSONAL/WRITING/THOUGHTS/", "PERSONAL/WRITING/BLOG POSTS/", "PERSONAL/WRITING/FICTION/", "PERSONAL/WRITING/OTHER/"], true);
 let title = await tp.system.prompt("Title", "", true);
-let prefix = type == "THOUGHTS/" ? tp.date.now("YYYY-MM-DD_ddd") + " " : "";
-await tp.file.move("PERSONAL/WRITING/" + type + prefix + title);
+const invalidChars = /[:\/\\*?"<>|]/g;
+await tp.file.move(type + title.replace(invalidChars, ""));
 %>---
-banner: "[[thought.jpg]]"
+banner: "writing.webp"
+type: "writing"
+summary:
+daily_note: <% tp.date.now("YYYY-MM-DD") %>
+projects:
 tags:
   - TODO/WRITE
 ---
-# Daily Note : [[<%tp.date.now("YYYY-MM-DD_ddd")%>]]
-
----
+# <% title %>

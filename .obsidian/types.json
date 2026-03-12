@@ -46,6 +46,19 @@
     "TQ_show_tree": "checkbox",
     "TQ_show_urgency": "checkbox",
     "excalidraw-embed-md": "checkbox",
-    "year": "text"
+    "year": "number",
+    "words": "number",
+    "related_projects": "multitext",
+    "authors": "multitext",
+    "affiliations": "multitext",
+    "num_pages": "number",
+    "roles": "multitext",
+    "daily_note": "date",
+    "attendees": "multitext",
+    "excalidraw-export-internal-links": "checkbox",
+    "people": "multitext",
+    "date": "date",
+    "grants": "multitext",
+    "TQ_show_toolbar": "checkbox"
   }
 }

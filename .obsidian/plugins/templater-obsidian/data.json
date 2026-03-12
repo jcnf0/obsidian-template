@@ -33,6 +33,30 @@
     {
       "folder": "MISC/PEOPLE",
       "template": "MISC/TEMPLATES/People Template.md"
+    },
+    {
+      "folder": "RESEARCH/PROJECTS",
+      "template": "MISC/TEMPLATES/Project Template.md"
+    },
+    {
+      "folder": "PERSONAL/WRITING",
+      "template": "MISC/TEMPLATES/Writing Template.md"
+    },
+    {
+      "folder": "RESEARCH/WRITING",
+      "template": "MISC/TEMPLATES/Writing Template.md"
+    },
+    {
+      "folder": "PERSONAL/READING",
+      "template": "MISC/TEMPLATES/Reading Template.md"
+    },
+    {
+      "folder": "RESEARCH/READING",
+      "template": "MISC/TEMPLATES/Reading Template.md"
+    },
+    {
+      "folder": "MISC/ENTITIES",
+      "template": "MISC/TEMPLATES/Entity Template.md"
     }
   ],
   "enable_file_templates": false,

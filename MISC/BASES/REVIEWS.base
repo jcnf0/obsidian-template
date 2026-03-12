@@ -15,7 +15,7 @@ views:
       - venue
       - year
     sort:
-      - property: venue
+      - property: year
         direction: DESC
     columnSize:
       note.paper_title: 428

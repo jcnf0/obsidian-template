@@ -1,6 +1,8 @@
 filters:
   and:
     - file.tags.contains("TODO")
+formulas:
+  parent_folder: file.folder.split("/")[-1]
 views:
   - type: table
     name: All
@@ -11,15 +13,51 @@ views:
       - file.name
       - file.folder
       - file.tags
+      - daily_note
       - file.ctime
     sort: []
+    columnSize:
+      file.tags: 118
   - type: table
     name: Reading
     filters:
       and:
         - file.hasTag("TODO/READ")
+    groupBy:
+      property: formula.parent_folder
+      direction: ASC
+    order:
+      - file.name
+      - formula.parent_folder
+      - daily_note
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: file.ctime
+        direction: ASC
+    columnSize:
+      file.name: 492
+      formula.parent_folder: 159
   - type: table
     name: Writing
     filters:
       and:
         - file.hasTag("TODO/WRITE")
+    groupBy:
+      property: formula.parent_folder
+      direction: ASC
+    order:
+      - file.name
+      - formula.parent_folder
+      - daily_note
+    sort:
+      - property: daily_note
+        direction: DESC
+      - property: formula.parent_folder
+        direction: ASC
+      - property: file.folder
+        direction: DESC
+    columnSize:
+      file.name: 492
+      formula.parent_folder: 159
+      note.daily_note: 161

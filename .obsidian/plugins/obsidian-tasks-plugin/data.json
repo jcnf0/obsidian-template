@@ -1,6 +1,6 @@
 {
   "presets": {},
-  "globalQuery": "filter by function task.description.length > 0\n(path includes MISC/DAILY NOTES) OR (path includes MISC/WEEKLY NOTES) OR (path includes RESEARCH/MEETINGS)\nshow tree",
+  "globalQuery": "filter by function task.description.length > 0\n(path includes MISC/DAILY NOTES/2026) OR (path includes MISC/WEEKLY NOTES/2026) OR (path includes RESEARCH/MEETINGS)\npath includes 2026\nsort by description\nshow tree",
   "globalFilter": "",
   "removeGlobalFilter": false,
   "taskFormat": "tasksPluginEmoji",
@@ -100,6 +100,19 @@
         "type": "IN_PROGRESS"
       }
     ]
+  },
+  "isShownInEditModal": {
+    "priority": true,
+    "recurrence": true,
+    "due": true,
+    "scheduled": true,
+    "start": true,
+    "before_this": true,
+    "after_this": true,
+    "status": true,
+    "created": true,
+    "done": true,
+    "cancelled": true
   },
   "features": {
     "INTERNAL_TESTING_ENABLED_BY_DEFAULT": true

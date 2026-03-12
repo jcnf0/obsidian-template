@@ -1,12 +1,25 @@
+filters:
+  and:
+    - file.folder.startsWith("RESEARCH/MEETINGS")
+    - file.ext == "md"
+formulas:
+  Untitled: ""
 views:
   - type: table
     name: Main
-    filters:
-      and:
-        - file.folder == "RESEARCH/MEETINGS"
     order:
       - file.name
       - summary
+      - daily_note
+      - projects
+      - tags
+    sort:
+      - property: daily_note
+        direction: DESC
+      - property: tags
+        direction: DESC
+    columnSize:
+      note.summary: 222
   - type: table
     name: PRISM
     filters:
@@ -18,3 +31,12 @@ views:
       - summary
     columnSize:
       file.name: 299
+  - type: table
+    name: Attendee Search
+    groupBy:
+      property: attendees
+      direction: ASC
+    order:
+      - file.name
+      - daily_note
+      - attendees

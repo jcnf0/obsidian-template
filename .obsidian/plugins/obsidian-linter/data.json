@@ -41,7 +41,7 @@
     },
     "remove-yaml-keys": {
       "enabled": false,
-      "yaml-keys-to-remove": ""
+      "yaml-keys-to-remove": "company"
     },
     "sort-yaml-array-values": {
       "enabled": false,
@@ -106,7 +106,8 @@
       "enabled": false
     },
     "move-footnotes-to-the-bottom": {
-      "enabled": false
+      "enabled": false,
+      "include-blank-line-between-footnotes": false
     },
     "re-index-footnotes": {
       "enabled": false
@@ -270,13 +271,17 @@
       "enabled": false
     }
   },
-  "lintOnSave": false,
+  "lintOnSave": true,
   "recordLintOnSaveLogs": false,
-  "displayChanged": true,
-  "lintOnFileChange": false,
+  "displayChanged": false,
+  "suppressMessageWhenNoChange": false,
+  "lintOnFileChange": true,
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
-  "foldersToIgnore": [],
+  "additionalFileExtensions": [],
+  "foldersToIgnore": [
+    "MISC/TEMPLATES"
+  ],
   "filesToIgnore": [],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
