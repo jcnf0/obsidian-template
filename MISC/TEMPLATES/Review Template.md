@@ -4,7 +4,7 @@ let link = await tp.system.prompt("Review Link", null, false);
 let venue = await tp.system.prompt("Venue", null, true);
 let year = await tp.system.prompt("Year", tp.date.now("YYYY"), true);
 const invalidChars = /[:\/\\*?"<>|]/g;
-await tp.file.rename(venue + "'" + year.slice(-2) + " " + title.replace(invalidChars, ""))
+await tp.file.move("RESEARCH/READING/REVIEWS/" + venue + "'" + year.slice(-2) + " " + title.replace(invalidChars, ""));
 %>---
 banner: "reading.png"
 type: "review"
@@ -17,18 +17,26 @@ tags:
   - TODO/WRITE
 ---
 # <% title %>
-## Abstract / Introduction
+## Raw Notes
+### Abstract Introduction
 
-## Background
+### Background
 
-## Methodology
+### Methodology
 
-## Evaluation
+### Evaluation
 
+## Strengths / Weaknesses
+### Strengths
 
+### Weaknesses
+
+## Comments for Authors
+
+## Comments for PC
 
 ---
-# Review
+## Review
 ```
 INSERT REVIEW TEMPLATE
 ```

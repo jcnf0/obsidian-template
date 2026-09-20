@@ -11,14 +11,15 @@ views:
       direction: ASC
     order:
       - file.name
-      - paper_title
+      - title
       - venue
       - year
+      - daily_note
     sort:
       - property: year
         direction: DESC
     columnSize:
-      note.paper_title: 428
+      note.title: 428
       note.venue: 115
   - type: table
     name: TODO
@@ -30,11 +31,11 @@ views:
         - file.tags.contains("TODO/WRITE")
     order:
       - file.name
-      - paper_title
+      - title
       - venue
       - year
     columnSize:
-      note.paper_title: 428
+      note.title: 428
       note.venue: 115
   - type: table
     name: Paper
@@ -47,12 +48,12 @@ views:
       direction: ASC
     order:
       - file.name
-      - paper_title
+      - title
       - venue
       - year
     sort: []
     columnSize:
-      note.paper_title: 428
+      note.title: 428
       note.venue: 115
   - type: table
     name: Artifact
@@ -65,10 +66,13 @@ views:
       direction: ASC
     order:
       - file.name
-      - paper_title
+      - title
       - venue
       - year
-    sort: []
+      - daily_note
+    sort:
+      - property: daily_note
+        direction: ASC
     columnSize:
-      note.paper_title: 428
+      note.title: 428
       note.venue: 115

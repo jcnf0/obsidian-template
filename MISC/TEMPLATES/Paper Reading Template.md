@@ -28,7 +28,7 @@ let authors_yaml = parseList(authors_input);
 let affiliations_yaml = parseList(affiliations_input);
 
 const invalidChars = /[:\/\\*?"<>|]/g;
-await tp.file.rename(title.replace(invalidChars, ""));
+await tp.file.move("RESEARCH/READING/PAPERS/" + title.replace(invalidChars, ""));
 %>---
 banner: "reading.png"
 type: "paper"
@@ -47,10 +47,29 @@ tags:
   - TODO/READ
 ---
 # <% title %>
-## Abstract / Introduction
+## High-level
+**Area:**
 
-## Background
+**Problem:**
 
-## Methodology
+**Solution:**
 
-## Evaluation
+**Takeaway:**
+
+---
+## Thoughts
+
+---
+## Raw Notes
+### Abstract / Introduction
+
+### Background
+
+### Methodology
+
+### Evaluation
+
+### Discussion
+
+---
+## AI Summary

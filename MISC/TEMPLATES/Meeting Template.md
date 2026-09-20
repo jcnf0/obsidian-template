@@ -24,3 +24,12 @@ tags:
 
 ---
 ## Notes
+
+---
+## Action Items
+
+---
+## AI Summary
+
+---
+## Transcript

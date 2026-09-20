@@ -1,12 +1,9 @@
 [
   "templater-obsidian",
-  "calendar",
   "obsidian-meta-bind-plugin",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-icon-folder",
-  "obsidian-pandoc",
   "periodic-notes",
-  "obsidian-zotero-desktop-connector",
   "obsidian-linter",
   "obsidian-style-settings",
   "pexels-banner",
@@ -17,7 +14,6 @@
   "omnisearch",
   "obsidian42-brat",
   "obsidian-snippet-downloader",
-  "obsidian-livesync",
-  "obsidian-local-rest-api",
-  "obsidian-day-planner"
+  "obsidian-day-planner",
+  "calendar"
 ]

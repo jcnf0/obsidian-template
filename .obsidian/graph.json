@@ -2,16 +2,16 @@
   "collapse-filter": false,
   "search": "-path:MISC/TEMPLATES -path:MISC/MOC  ",
   "showTags": false,
-  "showAttachments": true,
-  "hideUnresolved": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
   "showOrphans": false,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"RESEARCH\"  ",
+      "query": "path:RESEARCH/PROJECTS  ",
       "color": {
         "a": 1,
-        "rgb": 14048348
+        "rgb": 9699464
       }
     },
     {
@@ -43,10 +43,24 @@
       }
     },
     {
-      "query": "path:RESEARCH/PROJECTS  ",
+      "query": "path:RESEARCH  ",
       "color": {
         "a": 1,
-        "rgb": 65284
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:PERSONAL  ",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "path:MISC/AFFILIATIONS  ",
+      "color": {
+        "a": 1,
+        "rgb": 57855
       }
     }
   ],
@@ -60,6 +74,6 @@
   "repelStrength": 16.2371134020619,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.05652840025339039,
-  "close": false
+  "scale": 0.018316292234227306,
+  "close": true
 }

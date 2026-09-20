@@ -15,7 +15,9 @@ views:
       - file.tags
       - daily_note
       - file.ctime
-    sort: []
+    sort:
+      - property: daily_note
+        direction: ASC
     columnSize:
       file.tags: 118
   - type: table
@@ -32,11 +34,11 @@ views:
       - daily_note
     sort:
       - property: file.name
-        direction: ASC
+        direction: DESC
       - property: file.ctime
-        direction: ASC
+        direction: DESC
     columnSize:
-      file.name: 492
+      file.name: 548
       formula.parent_folder: 159
   - type: table
     name: Writing

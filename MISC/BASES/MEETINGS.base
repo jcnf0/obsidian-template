@@ -19,6 +19,7 @@ views:
       - property: tags
         direction: DESC
     columnSize:
+      file.name: 520
       note.summary: 222
   - type: table
     name: PRISM

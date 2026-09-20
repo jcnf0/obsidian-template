@@ -4,7 +4,7 @@ let link = await tp.system.prompt("Review Link", null, false);
 let venue = await tp.system.prompt("Venue", null, true);
 let year = await tp.system.prompt("Year", tp.date.now("YYYY"), true);
 const invalidChars = /[:\/\\*?"<>|]/g;
-await tp.file.rename(venue + "'" + year.slice(-2) + " " + title.replace(invalidChars, ""))
+await tp.file.move("RESEARCH/CODE/ARTIFACT REVIEWS/" + venue + "'" + year.slice(-2) + " " + title.replace(invalidChars, ""));
 %>---
 banner: "code.webp"
 type: "review"
@@ -18,11 +18,11 @@ tags:
 ---
 # <% title %>
 
-
+## Raw Notes
 
 
 ---
-# Review
+## Review
 ```
 INSERT REVIEW TEMPLATE
 ```

@@ -1,12 +1,6 @@
 
 # Personal
 `#NOTE-TO-SELF` For when I have some thought that is not big enough to make a dedicated note.
-## Day Rating
-`#DAY-RATING/★☆☆☆☆`
-`#DAY-RATING/★★☆☆☆`
-`#DAY-RATING/★★★☆☆`
-`#DAY-RATING/★★★★☆`
-`#DAY-RATING/★★★★★`
 
 ---
 # Work
@@ -40,6 +34,9 @@ Those tags are meant to be used when operating on the vault.
 `#TODO` To mark notes already created with actions required: `#TODO/WRITE`, `#TODO/READ`, or `#TODO/REFACTOR `
 `#ARCHIVE` Self-explanatory. Can be used as a filter to avoid loading and searching many files.
 
+## Agents
+`#AGENT/KARA`, `#AGENT/SENKU`, `#AGENT/CONNOR` for each note that was touched by an agent (or `#AGENT/CLAUDE` for Claude)
+
 ## Tasks
 ### Type of Task
 `#TASK/CODING`
@@ -55,5 +52,5 @@ Those tags are meant to be used when operating on the vault.
 ### Depth of Task
 To cluster the depth of the task such that we can focus more easily on deep task during deep work.
 If not sure, ask yourself: *How long would it take (in months) to train a smart recent college graduate with no specialized training in my field to complete this task?* (taken from Deep Work)
-`#TASK/SHALLOW `
+`#TASK/SHALLOW`
 `#TASK/DEEP`

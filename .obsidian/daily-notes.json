@@ -1,6 +1,1 @@
-{
-  "folder": "MISC/DAILY NOTES",
-  "template": "MISC/TEMPLATES/Daily Note Template",
-  "format": "YYYY/YYYY-MM-DD_ddd",
-  "autorun": false
-}
+{"folder":"MISC/DAILY NOTES","template":"MISC/TEMPLATES/Daily Note Template.md","format":"YYYY/MM-MMM/YYYY-MM-DD_ddd","autorun":false}

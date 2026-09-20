@@ -4,5 +4,12 @@
   "attachmentFolderPath": "MISC/ATTACHMENTS",
   "propertiesInDocument": "visible",
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

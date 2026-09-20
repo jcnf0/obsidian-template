@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.inFolder("AGENTS/INBOX")
+views:
+  - type: table
+    name: Main
+    order:
+      - file.name
+      - proposed_path
+      - agent
+      - priority
+      - status
+      - created
+      - task_id

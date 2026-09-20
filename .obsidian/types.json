@@ -59,6 +59,11 @@
     "people": "multitext",
     "date": "date",
     "grants": "multitext",
-    "TQ_show_toolbar": "checkbox"
+    "TQ_show_toolbar": "checkbox",
+    "start_date": "date",
+    "end_date": "date",
+    "progress_rating": "number",
+    "scholar": "text",
+    "birthday": "date"
   }
 }

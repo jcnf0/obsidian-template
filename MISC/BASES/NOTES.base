@@ -1,32 +1,31 @@
-filters:
-  and:
-    - file.folder.startsWith("RESEARCH/READING/PAPERS")
 views:
   - type: table
     name: Main
+    filters:
+      and:
+        - file.folder == "RESEARCH/READING/PAPERS"
     order:
       - file.name
-      - title
+      - paper_title
       - venue
       - year
       - summary
       - daily_note
-      - projects
       - tags
     sort:
       - property: daily_note
-        direction: DESC
-      - property: venue
         direction: DESC
       - property: file.ctime
         direction: DESC
       - property: year
         direction: ASC
-      - property: title
+      - property: paper_title
         direction: DESC
+      - property: venue
+        direction: ASC
     columnSize:
-      file.name: 403
-      note.title: 345
+      file.name: 474
+      note.paper_title: 345
       note.summary: 362
       note.tags: 600
   - type: table
@@ -34,5 +33,6 @@ views:
     filters:
       and:
         - file.tags.contains("TODO/READ")
+        - file.folder == "RESEARCH/READING/PAPERS"
     imageAspectRatio: 1
     cardSize: 260

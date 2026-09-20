@@ -1,11 +1,9 @@
 {
   "enabledCssSnippets": [
-    "test",
     "minimal-tasks",
-    "embed",
-    "Embedded Markdown",
     "metabind"
   ],
   "cssTheme": "Blue Topaz",
-  "accentColor": "#d60000"
+  "accentColor": "#d60000",
+  "theme": "obsidian"
 }

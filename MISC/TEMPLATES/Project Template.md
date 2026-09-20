@@ -26,7 +26,7 @@ let authors_yaml = parseList(collaborators_input);
 let affiliations_yaml = parseList(affiliations_input);
 
 const invalidChars = /[:\/\\*?"<>|]/g;
-await tp.file.rename(title.replace(invalidChars, ""));
+await tp.file.move("RESEARCH/PROJECTS/" + title.replace(invalidChars, ""));
 %>---
 title: <% title %>
 year: <% year %>

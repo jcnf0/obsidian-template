@@ -14,42 +14,73 @@ find . -name ".gitkeep" -delete
 
 ## The Vault
 ### Structure
-This subset of my vault contains the structure for my research (which I split into *coding*, *reading*, and *writing*) and miscellaneous utilities as follows:
+This subset of my vault contains the structure for my research (which I split into *coding*, *reading*, and *writing*), personal notes, and miscellaneous utilities as follows:
 
 ```
 Vault
+├── AGENTS               # agent inbox/outbox
+│   ├── INBOX
+│   └── OUTBOX
+├── CLASSES              # course notes
 ├── MISC
 │   ├── AFFILIATIONS
+│   │   ├── COMPANIES
+│   │   └── UNIVERSITIES
 │   ├── ATTACHMENTS
-│   ├── BASES
+│   │   └── BANNERS
+│   ├── BASES            # Obsidian Bases views
+│   ├── CLIPPINGS
+│   ├── COPILOT
 │   ├── DAILY NOTES
+│   ├── EVENTS
+│   │   ├── PHD
+│   │   └── VENUES
 │   ├── EXCALIDRAW
-│   ├── MOC
 │   ├── PEOPLE
+│   ├── PLANNING AND REVIEW
 │   ├── TEMPLATES
-│   └── WEEKLY NOTES
+│   ├── WEEKLY NOTES
+│   ├── TAGSONOMY.md     # the tag authority
+│   └── Weekly Tasks.md  # recurring-task scaffold
 ├── PERSONAL
 │   ├── HOBBIES
+│   │   ├── GAME DEVELOPMENT
+│   │   ├── HOMELAB
+│   │   └── STYLING
 │   ├── LOGISTICS
+│   ├── LOGS
 │   ├── READING
 │   │   ├── BOOKS
 │   │   └── OTHER
-│   ├── WRITING
-│   │   ├── BLOG POSTS
-│   │   ├── FICTION
-│   │   ├── OTHER
-│   │   └── THOUGHTS
-│   └── LOGISTICS
+│   └── WRITING
+│       ├── OTHER
+│       └── THOUGHTS
 ├── RESEARCH
 │   ├── CODE
 │   │   └── ARTIFACT REVIEWS
 │   ├── LOGISTICS
+│   ├── LOGS
 │   ├── MEETINGS
 │   ├── PROJECTS
+│   │   └── IDEA
 │   ├── READING
+│   │   ├── OTHER
 │   │   ├── PAPERS
-│   │   └── REVIEWS
+│   │   ├── REVIEWS
+│   │   └── SPECIFICATIONS
 │   └── WRITING
-├── Homepage.md
+│       ├── Fellowships
+│       ├── Grants
+│       ├── Guides
+│       └── THOUGHTS
+├── AGENTS.md            # agent workflow
+├── Homepage.canvas
 └── README.md
 ```
+
+### Agent Setup
+`AGENTS.md` defines a lightweight, generalized agent workflow you can adapt or delete — rename the example agent roles/tags and adjust the conventions to your own setup.
+
+Agents exchange work through `AGENTS/OUTBOX/` (requests you send to agents) and `AGENTS/INBOX/` (drafts agents return for your review), using the Outbox/Inbox templates and the `INBOX.base` review queue. See `AGENTS.md` for the full convention.
+
+> **Note:** Secrets are never committed. Plugin data for LiveSync, Local REST API, and Whisper is intentionally excluded — configure those locally after cloning.

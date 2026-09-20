@@ -1,0 +1,13 @@
+# OS junk
+.DS_Store
+*.bak
+
+# Plugin data with secrets/machine-specific config — configure after cloning
+.obsidian/plugins/obsidian-livesync/
+.obsidian/plugins/obsidian-local-rest-api/
+.obsidian/plugins/whisper/
+
+# Obsidian caches
+.trash/
+.smart-connections/
+.smart-env/

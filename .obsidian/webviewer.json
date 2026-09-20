@@ -1,6 +1,1 @@
-{
-  "openExternalURLs": false,
-  "enableAdblocking": true,
-  "customSearchEngine": "https://duckduckgo.com/?q=%s",
-  "searchEngine": "duckduckgo"
-}
+{"openExternalURLs":false,"enableAdblocking":true,"customSearchEngine":"https://duckduckgo.com/?q=%s","searchEngine":"duckduckgo"}
